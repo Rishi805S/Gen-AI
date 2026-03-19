@@ -2,3 +2,4 @@ venv/
 .env
 __pycache__/
 *.pyc
+User's Perspective/LanChain/6. Runnables/Primitve Runnables/.git.backup-*/
