@@ -3,3 +3,14 @@ venv/
 __pycache__/
 *.pyc
 User's Perspective/LanChain/6. Runnables/Primitve Runnables/.git.backup-*/
+
+# Chroma DB persisted files
+chroma_langchain_db/
+*.sqlite3
+*.sqlite
+
+# Local ML assets
+Machine_learning_folder/
+
+# PDF files
+*.pdf
