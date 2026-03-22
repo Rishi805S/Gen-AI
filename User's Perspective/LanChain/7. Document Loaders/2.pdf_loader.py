@@ -2,6 +2,7 @@
 # from langchain_core.prompts import PromptTemplate
 # from langchain_core.output_parsers import StrOutputParser
 # from langchain_core.runnables import RunnableSequence, RunnableParallel
+# import os
 from langchain_community.document_loaders import PyPDFLoader
 # from dotenv import load_dotenv
 
@@ -9,7 +10,7 @@ from langchain_community.document_loaders import PyPDFLoader
 
 # llm = HuggingFaceEndpoint(
 #    model='meta-llama/Llama-3.1-8B-Instruct',
-#    huggingfacehub_api_token='os.getenv("HUGGINGFACEHUB_API_TOKEN")',
+#    huggingfacehub_api_token=os.getenv("HUGGINGFACEHUB_API_TOKEN"),
 #    temperature=0.7,
 #    max_new_tokens=1000
 # )

@@ -1,3 +1,5 @@
+import os
+
 from langchain_community.document_loaders import TextLoader
 from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
 from langchain_core.prompts import PromptTemplate
@@ -8,7 +10,7 @@ load_dotenv()
 
 llm = HuggingFaceEndpoint(
    model='meta-llama/Llama-3.1-8B-Instruct',
-   huggingfacehub_api_token='os.getenv("HUGGINGFACEHUB_API_TOKEN")',
+   huggingfacehub_api_token=os.getenv("HUGGINGFACEHUB_API_TOKEN"),
    temperature=0.7,
    max_new_tokens=1000
 )
